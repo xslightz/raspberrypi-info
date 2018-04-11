@@ -49,7 +49,8 @@ pi@pihole:~ $ temp
 temp=34.7'C
 ```
 
-I have added the .bash_alias with some useful commands in case you overclock your RPI or you can do it manually by executing this command.
+
+I have added the file [bash_aliases](.bash_aliases)  with some useful commands in case you overclock your RPI or you can do it manually by executing this command.
 
 ```
 nano .bash_aliases
@@ -93,7 +94,23 @@ You may add your own aliases just follow the examples short_name=’long command
 * ```iwlist wlan0 scan | grep ESSID``` Use grep along with the name of a field to list only the fields you need (for example to just list the ESSIDs).
 * ```nmap``` Scans your network and lists connected devices, port number, protocol, state (open or closed) operating system, MAC addresses, and other information.
 * ```ping``` Tests connectivity between two devices connected on a network. For example, ping 10.0.0.32 will send a packet to the device at IP 10.0.0.32 and wait for a response. It also works with website addresses.
-* ```wget``` http://www.website.com/example.txt: Downloads the file example.txt from the web and saves it to the current directory.
+* ```wget http://www.website.com/example.txt``` Downloads the file example.txt from the web and saves it to the current directory.
+
+###  SYSTEM INFORMATION COMMANDS
+
+* ```cat /proc/meminfo``` Shows details about your memory.
+* ```cat /proc/partitions``` Shows the size and number of partitions on your SD card or hard drive.
+* ```cat /proc/version``` Shows you which version of the Raspberry Pi you are using.
+* ```df -h``` Shows information about the available disk space.
+* ```df /``` Shows how much free disk space is available.
+* ```dpkg – –get–selections | grep XXX``` Shows all of the installed packages that are related to XXX.
+* ```dpkg – –get–selections``` Shows all of your installed packages.
+* ```free``` Shows how much free memory is available. running ```free -m``` will format the size to mb.
+* ```hostname -I``` Shows the IP address of your Raspberry Pi.
+* ```lsusb``` Lists USB hardware connected to your Raspberry Pi.
+* UP key: Pressing the UP key will print the last command entered into the command prompt. This is a quick way to repeat previous commands or make corrections to commands.
+* ```vcgencmd measure_temp``` Shows the temperature of the CPU.
+* ```vcgencmd get_mem arm && vcgencmd get_mem gpu``` Shows the memory split between the CPU and GPU.
 
 [Profit-PI]: <https://github.com/CryptoGnome/Profit-Pi>
 [ptwikipi]: <https://wiki.profittrailer.com/doku.php?id=raspberry_pi_guide#requirements>
