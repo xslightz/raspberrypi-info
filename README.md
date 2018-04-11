@@ -17,7 +17,7 @@ A collection of commands I have found that has helped me and thought I’d share
 
 Additional; if you want to monitor the bandwidth usage. Install vnstat by executing this command.
 
-[create an anchor](#anchors-in-markdown)
+### install vnstat
 ```
 sudo apt-get install vnstat
 ```
