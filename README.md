@@ -83,6 +83,8 @@ temp=34.7'C
 You may add your own aliases just follow the examples short_name=’long command here’ remember to run ``` source .bash_aliases``` or log out and log back in.
 
 # Commands
+### Network
+* ```vntstat``` Used to monitor bandwidth usage, see how to install [install vnstat](#install-vnstat)
 
 [Profit-PI]: <https://github.com/CryptoGnome/Profit-Pi>
 [ptwikipi]: <https://wiki.profittrailer.com/doku.php?id=raspberry_pi_guide#requirements>
