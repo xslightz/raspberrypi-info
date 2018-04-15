@@ -11,7 +11,7 @@ A collection of commands I have found that has helped me and thought I’d share
 
 	1. sudo apt-get install curl libunwind8 gettext > Install three prerequiste packages
 	2. curl -sSL -o dotnet.tar.gz https://dotnetcli.blob.core.windows.net/dotnet/Runtime/2.0.4/dotnet-runtime-2.0.4-linux-arm.tar.gz > Download the latest .NET Core Runtime currently working with PTMagic
-	3. sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet-runtime-2.0.4-linux-arm.tar.gz -C /opt/dotnet > Create a destination folder and extract the downloaded package into it
+	3. sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet > Create a destination folder and extract the downloaded package into it
 	4. sudo ln -s /opt/dotnet/dotnet /usr/local/bin > Test the installation
 	5. dotnet --help
 
