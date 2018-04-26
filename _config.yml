@@ -1,1 +1,4 @@
 theme: jekyll-theme-hacker
+title: Raspberry PI Info
+description: Useful Raspberry PI informationraspberrypi-info
+baseurl: /raspberrypi-info
